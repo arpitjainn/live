@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WhenWing</title>
+    <link rel="icon" href="./assets/images/logo.png">
+    <link rel="stylesheet" href="./assets/stylesheets/fontawesome-all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/stylesheets/mains.css">
+	<link rel="stylesheet" href="listpro.css">
+    <script src="./assets/js/controller.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/Bootstrap/js/bootstrap.bundle.min.js">
+    <!-- <script>
+        dataObj = {}
+        getdata = function(){
+            var home = document.getElementById('input1').value
+            var online = document.getElementById('input2').value
+            dataObj.home = home;
+            dataObj.online = online;
+            console.log(dataObj);
+        }
+    </script> -->
+</head>
+<body>
+
+    <div id="container1">
+        <nav class="navbar navbar-expand-lg bg-white navbar-dark py-0 fixed-top bshadow" id="c1">
+            <div class="container mx-1000"> 
+              <button class="navbar-toggler text-dark" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <i class="fa fa-bars"></i>
+              </button>
+              <a class="navbar-brand py-3" href="index.html"><img src="./assets/images/logo.png"class="h62"></a><strong>EDUCATION</strong>
+        
+              
+              <a class="nav-link f12 pr-3" href="#"></a>
+        
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        
+                
+              </div>  
+            </div>  
+          </nav>
+		  
+		  
+		  <div class="container-fluid row mt-5 p-3 pt-5 mr-3">
+    <div class="col-sm-3 mt-5 mt-md-1 p-4 pt-5 border-right" id="filters">
+    <button class="btn bg-transparent float-right" type="button" data-toggle="collapse" data-target="#filterForm" aria-expanded="false" aria-controls="filterForm">
+        <span class="badge badge-pill badge-primary" style="font-size: 1.2rem;"><i class="fa fa-chevron-down"></i></span>
+    </button>
+    <h2><i class="fas fa-sliders-h text-primary mr-2 align-middle mb-1" style="font-size: 1.5rem"></i>Filters</h2>
+    <form class="collapse mt-3" id="filterForm" method="POST" action="">
+        <label for="customRange" style="font-weight: bold">Price</label>
+        <div class="d-flex bd-highlight">
+            <div class="p-2 flex-fill bd-highlight">₹ 100</div>
+            <div class="p-2 flex-fill bd-highlight">
+                <input type="range" class="custom-range" id="priceFilter" name="priceFilter" min="100" max="5000" step="50" value="100">
+            </div>
+            <div class="p-2 flex-fill bd-highlight">₹ 5000</div>
+        </div>
+        <div class="text-center" id="priceFilterVal" style="font-weight: bold"></div>
+        <label for="customRange" style="font-weight: bold">Location</label>
+        <div class="d-flex bd-highlight">
+            <div class="p-2 flex-fill bd-highlight">1 KM</div>
+            <div class="p-2 flex-fill bd-highlight">
+                <input type="range" class="custom-range" id="locFilter" name="locFilter" min="2" max="20" step="1" value="2">
+            </div>
+            <div class="p-2 flex-fill bd-highlight">20 KM</div>
+        </div>
+        <div class="text-center" id="locFilterVal" style="font-weight: bold"></div>
+        <input type="submit" value="Apply" class="btn btn-primary btn-sm mt-3 ml-2 col-sm-5">
+        <input type="reset" value="Clear Filters" class="btn btn-danger ml-2 btn-sm mt-3 col-sm-5" id="resetFilterForm">
+    </form>
+
+    </div>
+    <div class="col-sm-9">
+        <div class="container m-3 p-4 shadow-sm">
+            <h3>List of Providers <span id="res-count" class="badge badge-pill badge-success">2</span></h3>
+            <div class="card mt-3 shadow-sm">
+                            <div class="card-header"><img src="logo.png" alt="John Doe" class="mr-3 rounded-circle" style="width:50px;">
+                            <h4 style="display: inline-block">uhujhdfc</h4></div>                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <ul>
+                                            <li><b>Gender: </b>Male</li>
+                                            <li><b>Work Experience: </b>7 Year</li>
+                                            <li><b>Record: </b>dffffffffffff</li>
+                                            <li><b>About: </b>fjsdsdfnsc djsf</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <ul>
+                                            <li><b>Address: </b>yahi pe, Delhi NCR- 66655</li>
+                                            <li><b>Contact: </b>7878778787</li>
+                                            <li><b>Email: </b>skc@dfdfdm.ggfg</li>
+                                            <li><b>Price: </b>₹ 500</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer text-center p-0">
+                                <button class="btn btn-primary mx-2 btn-sm">Select</button>
+                                <a class="btn btn-success mx-2 btn-sm" href="/order-booking-msg/1">Book Now</a>
+								<a class="btn btn-success mx-2 btn-sm" href="viewprofile.html">View Profile</a>
+                            </div>
+                        </div>
+                        <div class="card mt-3 shadow-sm">
+                            <div class="card-header"><img src="logo.png" alt="John Doe" class="mr-3 rounded-circle" style="width:50px;">
+                            <h4 style="display: inline-block">ankit verma</h4></div>                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <ul>
+                                            <li><b>Gender: </b>Male</li>
+                                            <li><b>Work Experience: </b>3 Year</li>
+                                            <li><b>Record: </b>narela,azadpur,shalimaar bhag.</li>
+                                            <li><b>About: </b>i am gradugate from du in art.
+i am 25 year old men.
+working in inalsa since 2015.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <ul>
+                                            <li><b>Address: </b>swroop vihar nathu pura delhi , Delhi NCR- 110065</li>
+                                            <li><b>Contact: </b>8010256398</li>
+                                            <li><b>Email: </b>amitsharma3381@gmail.com</li>
+                                            <li><b>Price: </b>₹ 400</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer text-center p-0">
+                                <button class="btn btn-primary mx-2 btn-sm">Select</button>
+								<a class="btn btn-success mx-2 btn-sm" href="/order-booking-msg/25">Book Now</a>
+								<a class="btn btn-success mx-2 btn-sm" href="viewprofile.html">View Profile</a>
+							
+                                
+								
+								
+                            </div>
+                        </div>
+                                            <!--script>
+                        var res_count=document.getElementById('res-count');
+                        res_count.innerHTML= '2';
+                        res_count.classList.remove('badge-danger');
+                        res_count.classList.add('badge-success');
+
+                    </script-->
+                                
+        </div>
+    </div>
+</div>
+		  
+		  
+	
+            
+
+
+                    </div>
+             
+
+
+			
+
+
+			
+		
+			
+			
+			
+
+
+
+
+          <!-- <div id="container11" class="col-xl-7 col-lg-7 col-md-7 col-12">
+        <div class="container-fluid"> -->
+          
+            <!-- <form class="form-inline my-2 my-lg-0"> -->
+                <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search here for best institutions, coaching centres, tutions etc. " aria-label="Search" id="search">
+                <button class="btn btn-outline-success col-xl-7 col-lg-7 col-md-7 col-6" type="submit" id="searchbtn">Search 
+                </button>
+              </form>
+              </div>
+              </div> -->
+
+
+     
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
+</body>
+</html>

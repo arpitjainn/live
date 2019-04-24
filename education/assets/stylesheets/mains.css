@@ -1,0 +1,143 @@
+/* 
+  (ALL RIGHTS RESERVED) 
+
+CREATED AND DESIGNED BY -:
+
+     RAJAT (+91 9899446742)
+     rajatmudgil24@gmail.com  */
+
+
+     body{
+        margin: 0px;
+        /* font-family: 'Open Sans Condensed', sans-serif !important; */
+        /* background-color: black !important; */
+        /*background-image: url(../images/background.png);*/
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;    
+    }
+    *{
+      box-sizing: border-box;
+    }
+    .left{
+        float: left;
+    }
+    .right{
+        float: right;
+    }
+    .clearfix{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    
+    ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+       
+    }
+    .row{
+        display: flex;
+    }
+    .row1{
+        flex-wrap: wrap;
+    }
+    .row2{
+        column-count: 2;
+    }
+    hr{
+        margin: 0px !important;
+    }
+    
+    /* CONTAINER 1 */
+    #container1 .container-fluid{
+        padding: 0px;
+    }
+    #container1{
+        height: 50% !important ;
+    }
+    #c1{
+        background-color: black !important;
+        color: white !important;
+        font-size: 1.4em ;
+        padding: 0.4% 1% !important;
+        /* border: 1px solid white; */
+        }
+#c11{
+    box-shadow: 0 18px 16px -10px rgba(0,0,0,.4);
+    border: 1px solid white;
+    background-color: grey;
+    color: #fff !important;
+  
+}
+    #search{
+        margin-left: 38%;
+        margin-top: 38%;
+
+    }
+    #searchbtn{   
+        margin-left: 54%;
+        margin-top: 8%;
+        color: white;
+        border: 3px solid white;
+
+    }
+    #search{
+        padding:1.5%;
+    }
+    
+    .navbar-expand-lg .navbar-collapse{
+        margin-top: -1.8%;
+        margin-right: 1.6% !important;
+    }
+
+
+    .dropbtn {
+        /* box-shadow: 0 18px 16px -10px rgba(0,0,0,.4);
+        border: 1px solid white;
+        background-color: grey;
+        color: #fff !important; */
+        
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;        
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        box-shadow: 0 18px 16px -10px rgba(0,0,0,.4);
+        border: 1px solid white;
+       
+      }
+      
+      .dropdown-content a:hover {background-color: #ddd;}
+      
+      .dropdown:hover .dropdown-content {display: block;}
+      
+      .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+    #modal3{
+        margin-top: 12% !important;
+    }
+#coaching{
+    overflow: auto;
+    height: 450%;
+}
